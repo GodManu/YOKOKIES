@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - YoCookies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Nunito', sans-serif; background-color: #fdf6e3; color: #654321; }
+    header { background-color: #deb887; padding: 20px; text-align: center; color: white; }
+    nav { background-color: #f0e68c; display: flex; justify-content: center; gap: 15px; padding: 10px; }
+    nav a { color: #654321; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #8b5a2b; }
+    .contacto { padding: 20px; max-width: 600px; margin: auto; }
+    label { display: block; margin-top: 10px; }
+    input, textarea { width: 100%; padding: 10px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; }
+    button { margin-top: 15px; padding: 10px 20px; background-color: #deb887; color: white; border: none; border-radius: 5px; cursor: pointer; }
+    footer { background-color: #deb887; text-align: center; padding: 10px; margin-top: 40px; color: white; }
+  </style>
+</head>
+<body>
+  <header><h1>Contáctanos</h1></header>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="pasteles.html">Pasteles</a>
+    <a href="tortillas.html">Tortillas</a>
+    <a href="helados.html">Helados</a>
+    <a href="panes.html">Panes</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+  <section class="contacto">
+    <h2>Déjanos tu mensaje</h2>
+    <form>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" required>
+      <label for="telefono">Teléfono:</label>
+      <input type="tel" id="telefono" name="telefono" required>
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <p style="margin-top: 20px;">También puedes contactarnos vía WhatsApp: <strong>+52 624 123 4567</strong></p>
+  </section>
+  <footer>&copy; 2025 YoCookies - Esperamos tu pedido con gusto ☎️</footer>
+</body>
+</html>
