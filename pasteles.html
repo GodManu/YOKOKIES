@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pasteles - YoCookies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background-color: #fff8f0;
+      color: #4b2e2e;
+    }
+    header {
+      background-color: #f0c29c;
+      padding: 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+    nav {
+      background-color: #e9b27e;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 10px;
+    }
+    nav a {
+      color: #4b2e2e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #9c1c1c;
+    }
+
+    .catalogo {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+    .producto {
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
+    }
+    .producto:hover {
+      transform: scale(1.03);
+    }
+    .producto img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .producto-info {
+      padding: 15px;
+    }
+    .producto-info h3 {
+      margin: 0 0 10px;
+    }
+    .producto-info p {
+      margin: 0;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      background-color: #f0c29c;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pasteles & Pastelitos</h1>
+  </header>
+
+  <nav>
+    <a href="index.html">🏠 Inicio</a>
+    <a href="pasteles.html">🎂 Pasteles</a>
+    <a href="tortillas.html">🌮 Tortillas</a>
+    <a href="helados.html">🍦 Helados</a>
+    <a href="panes.html">🍞 Panes</a>
+    <a href="contacto.html">📞 Contacto</a>
+  </nav>
+
+  <section class="catalogo">
+    <div class="producto">
+      <img src="imagenes/pastel1.jpg" alt="Pastel de Chocolate">
+      <div class="producto-info">
+        <h3>Pastel de Chocolate</h3>
+        <p>Bizcocho húmedo con cobertura de ganache. Ideal para cumpleaños o celebraciones.</p>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="imagenes/pastel2.jpg" alt="Pastel de Tres Leches">
+      <div class="producto-info">
+        <h3>Pastel de Tres Leches</h3>
+        <p>Un clásico sinaloense: suave, dulce y perfecto con fruta fresca encima.</p>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="imagenes/pastel3.jpg" alt="Pastelito de Zanahoria">
+      <div class="producto-info">
+        <h3>Pastelitos de Zanahoria</h3>
+        <p>Mini pastelitos con nuez, glaseado y un toque especiado. ¡Amados por todos!</p>
+      </div>
+    </div>
+
+    <div class="producto">
+      <img src="imagenes/pastel4.jpg" alt="Cupcakes decorados">
+      <div class="producto-info">
+        <h3>Cupcakes Personalizados</h3>
+        <p>Pedidos por encargo, con temática especial y glaseado de mantequilla.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 YoCookies - Delicias hechas con amor desde Sinaloa</p>
+  </footer>
+</body>
+</html>
