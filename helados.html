@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Helados - YoCookies</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { margin: 0; font-family: 'Nunito', sans-serif; background-color: #e7f9ff; color: #2b3e50; }
+    header { background-color: #4cc9f0; padding: 20px; text-align: center; color: white; }
+    nav { background-color: #72d0eb; display: flex; justify-content: center; gap: 15px; padding: 10px; }
+    nav a { color: #2b3e50; text-decoration: none; font-weight: bold; }
+    nav a:hover { color: #174458; }
+    .catalogo { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; }
+    .producto { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.2s; }
+    .producto:hover { transform: scale(1.03); }
+    .producto img { width: 100%; height: 180px; object-fit: cover; }
+    .producto-info { padding: 15px; }
+    footer { background-color: #4cc9f0; text-align: center; padding: 10px; margin-top: 40px; color: white; }
+  </style>
+</head>
+<body>
+  <header><h1>Helados Artesanales</h1></header>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="pasteles.html">Pasteles</a>
+    <a href="tortillas.html">Tortillas</a>
+    <a href="helados.html">Helados</a>
+    <a href="panes.html">Panes</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+  <section class="catalogo">
+    <div class="producto"><img src="imagenes/helado1.jpg" alt="Helado de fresa"><div class="producto-info"><h3>Fresa Natural</h3><p>Helado cremoso hecho con fresas reales de temporada.</p></div></div>
+    <div class="producto"><img src="imagenes/helado2.jpg" alt="Helado de nuez"><div class="producto-info"><h3>Nuez</h3><p>Textura suave con trocitos de nuez caramelizada. Ideal para el calor.</p></div></div>
+  </section>
+  <footer>&copy; 2025 YoCookies - Sabor sinaloense refrescante 🍨</footer>
+</body>
+</html>
